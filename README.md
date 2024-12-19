@@ -1,6 +1,6 @@
 # Guida all'Utilizzo della ESP32 con MicroPython
 
-![ESP32 e MicroPython](esp_32.png)  
+![ESP32 e MicroPython](esp_32.png)
 
 ## 🚀 Introduzione
 La ESP32 è una scheda di sviluppo altamente versatile e potente, ideale per applicazioni IoT, automazione domestica, robotica e altro. In questa guida, esploreremo come configurare una ESP32 per eseguire MicroPython, un linguaggio di programmazione leggero e facile da usare basato su Python.
@@ -79,7 +79,7 @@ Sostituisci `<path_firmware>.bin` con il percorso del file firmware scaricato.
    - Installa VS Code: [code.visualstudio.com](https://code.visualstudio.com/).
    - Aggiungi l'estensione **Pymakr** per supportare MicroPython.
 
-### 🛠️ Strumenti Utile
+### 🛠️ Strumenti Utili
 - **ampy**: Per gestire file sulla ESP32:
   ```bash
   pip install adafruit-ampy
@@ -113,7 +113,54 @@ Sostituisci `<path_firmware>.bin` con il percorso del file firmware scaricato.
 
 ---
 
-## Passaggio 5: Collegarsi alla ESP32 con MicroPython
+## Passaggio 5: Utilizzo di Ampy per la ESP32
+### 🛠️ Comandi Principali di Ampy
+
+#### Installare Ampy
+Se non è già installato, puoi installarlo con:
+```bash
+pip install adafruit-ampy
+```
+
+#### Caricare un file sulla scheda ESP32
+Per caricare un file (es. `main.py`):
+```bash
+ampy --port /dev/ttyUSB0 put main.py
+```
+
+#### Eseguire un file sulla scheda ESP32
+Per eseguire un file direttamente:
+```bash
+ampy --port /dev/ttyUSB0 run main.py
+```
+
+#### Elencare i file presenti sulla scheda ESP32
+Per vedere i file già presenti:
+```bash
+ampy --port /dev/ttyUSB0 ls
+```
+
+#### Cancellare un file dalla scheda ESP32
+Per eliminare un file specifico:
+```bash
+ampy --port /dev/ttyUSB0 rm main.py
+```
+
+#### Leggere il contenuto di un file sulla scheda ESP32
+Per leggere il contenuto di un file:
+```bash
+ampy --port /dev/ttyUSB0 get main.py
+```
+
+#### Resettare la scheda ESP32
+Per effettuare un soft reset:
+```bash
+ampy --port /dev/ttyUSB0 reset
+```
+
+---
+
+## Passaggio 6: Collegarsi alla ESP32 con MicroPython
 ### 🛠️ Verifica del Funzionamento
 1. Apri Thonny e connetti la ESP32.
 2. Dovresti vedere il prompt di MicroPython (`>>>`).
@@ -125,7 +172,7 @@ Se visualizzi l'output, la configurazione è completa! 🎉
 
 ---
 
-## Passaggio 6: Creare il Primo Programma
+## Passaggio 7: Creare il Primo Programma
 ### 💡 Accendere un LED Integrato
 La maggior parte delle ESP32 ha un LED integrato collegato al pin `2`. Prova il seguente script:
 
@@ -156,4 +203,4 @@ Congratulazioni! Hai configurato con successo la tua ESP32 per utilizzare MicroP
 ---
 
 ## 📝 Licenza
-Questa guida è distribuita sotto licenza MIT. Sentiti libero di condividerla e modificarla secondo le tue esigenze.
+Questa guida è distribuita sotto
