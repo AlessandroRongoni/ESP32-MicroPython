@@ -1,6 +1,6 @@
 # Guida all'Utilizzo della ESP32 con MicroPython
 
-![ESP32 e MicroPython](esp32.png)  
+![ESP32 e MicroPython](esp_32.png)  
 
 ## 🚀 Introduzione
 La ESP32 è una scheda di sviluppo altamente versatile e potente, ideale per applicazioni IoT, automazione domestica, robotica e altro. In questa guida, esploreremo come configurare una ESP32 per eseguire MicroPython, un linguaggio di programmazione leggero e facile da usare basato su Python.
