@@ -203,4 +203,5 @@ Congratulazioni! Hai configurato con successo la tua ESP32 per utilizzare MicroP
 ---
 
 ## 📝 Licenza
-Questa guida è distribuita sotto
+Questa guida è distribuita sotto licenza MIT. Sentiti libero di utilizzarla, modificarla e condividerla secondo i termini della licenza.
+
